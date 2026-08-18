@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blackstone Notary | Mobile Notary Los Angeles</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>BLACKSTONE</h1>
+        <p>MOBILE NOTARY • LOS ANGELES</p>
+
+        <h2>Notarization. Wherever you are.</h2>
+
+        <p>
+            Professional mobile notary services delivered to your home,
+            office, hotel, hospital, or business.
+        </p>
+
+        <a href="#booking" class="book-button">
+            BOOK AN APPOINTMENT
+        </a>
+    </header>
+
+    <section class="services">
+        <p class="section-label">OUR SERVICES</p>
+
+        <h2>Professional notary service, brought to you.</h2>
+
+        <div class="service-grid">
+
+            <div class="service">
+                <span>01</span>
+                <h3>Mobile Notarizations</h3>
+                <p>
+                    Professional notary service at your home
+                    or preferred location.
+                </p>
+            </div>
+
+            <div class="service">
+                <span>02</span>
+                <h3>Hospital & Senior Visits</h3>
+                <p>
+                    Convenient mobile appointments for hospitals,
+                    senior communities, and care facilities.
+                </p>
+            </div>
+
+            <div class="service">
+                <span>03</span>
+                <h3>Business & Office</h3>
+                <p>
+                    On-site notary appointments for professionals
+                    and businesses throughout Los Angeles.
+                </p>
+            </div>
+
+            <div class="service">
+                <span>04</span>
+                <h3>Same-Day & After-Hours</h3>
+                <p>
+                    Flexible appointments when traditional
+                    business hours don't work for you.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pricing">
+        <p class="section-label">PRICING</p>
+
+        <h2>Simple. Transparent. Professional.</h2>
+
+        <div class="price-list">
+
+            <div class="price-item">
+                <div>
+                    <h3>Notarial Act</h3>
+                    <p>California statutory notary fee</p>
+                </div>
+
+                <strong>Up to $15</strong>
+            </div>
+
+            <div class="price-item">
+                <div>
+                    <h3>Local Mobile Service</h3>
+                    <p>
+                        Travel to your location within
+                        our local service area
+                    </p>
+                </div>
+
+                <strong>$25</strong>
+            </div>
+
+            <div class="price-item">
+                <div>
+                    <h3>Extended Mobile Service</h3>
+                    <p>
+                        For appointments outside
+                        our local service area
+                    </p>
+                </div>
+
+                <strong>$35+</strong>
+            </div>
+
+            <div class="price-item">
+                <div>
+                    <h3>After-Hours Service</h3>
+                    <p>
+                        Evening and select after-hours appointments
+                    </p>
+                </div>
+
+                <strong>+$25</strong>
+            </div>
+
+        </div>
+
+        <p class="pricing-note">
+            Mobile service fees are separate from notarial fees.
+            Parking or other location-specific costs may apply
+            and will be disclosed before your appointment.
+        </p>
+    </section>
+
+    <section class="service-area">
+        <p class="section-label">SERVICE AREA</p>
+
+        <h2>Serving Los Angeles.</h2>
+
+        <p class="area-intro">
+            Blackstone Notary provides convenient mobile notary services
+            throughout Los Angeles and surrounding areas.
+        </p>
+
+        <div class="area-grid">
+            <span>Downtown Los Angeles</span>
+            <span>Hollywood</span>
+            <span>Koreatown</span>
+            <span>West Hollywood</span>
+            <span>Beverly Hills</span>
+            <span>Culver City</span>
+            <span>Mid-City</span>
+            <span>Surrounding Areas</span>
+        </div>
+
+        <p class="area-note">
+            Outside these areas?
+            Contact us for availability and a travel quote.
+        </p>
+    </section>
+
+    <section class="booking" id="booking">
+        <p class="section-label">BOOK AN APPOINTMENT</p>
+
+        <h2>We'll come to you.</h2>
+
+        <p class="booking-intro">
+            Request your mobile notary appointment below.
+        </p>
+
+        <form
+            class="booking-form"
+            action="https://formspree.io/f/mnpaoqzv"
+            method="POST"
+        >
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">FULL NAME</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">PHONE</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="location">APPOINTMENT LOCATION</label>
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="City or ZIP code"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="service">SERVICE NEEDED</label>
+
+                <select
+                    id="service"
+                    name="service"
+                    required
+                >
+                    <option value="">Select a service</option>
+                    <option value="mobile">
+                        Mobile Notarization
+                    </option>
+                    <option value="hospital">
+                        Hospital / Senior Visit
+                    </option>
+                    <option value="business">
+                        Business / Office
+                    </option>
+                    <option value="after-hours">
+                        Same-Day / After-Hours
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="date">PREFERRED DATE</label>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="time">PREFERRED TIME</label>
+                    <input
+                        type="time"
+                        id="time"
+                        name="time"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="notes">APPOINTMENT DETAILS</label>
+
+                <textarea
+                    id="notes"
+                    name="notes"
+                    rows="5"
+                    placeholder="Tell us anything we should know about the appointment."
+                ></textarea>
+            </div>
+
+            <button type="submit">
+                REQUEST APPOINTMENT
+            </button>
+
+            <p class="form-note">
+                Appointment requests are not confirmed until you
+                receive confirmation from Blackstone Notary.
+            </p>
+
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div>
+                <h2>BLACKSTONE</h2>
+                <p>MOBILE NOTARY • LOS ANGELES</p>
+            </div>
+
+            <div class="footer-contact">
+                <p class="section-label">CONTACT</p>
+                <p>Los Angeles, California</p>
+                <p>Mobile appointments available</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                Blackstone Notary is not an attorney
+                and cannot provide legal advice.
+            </p>
+
+            <p>
+                © 2026 Blackstone Notary.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
