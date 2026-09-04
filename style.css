@@ -15,22 +15,30 @@ body {
     min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 40px 60px 60px;
 }
 
-/* TYPOGRAPHY */
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
 
 h1 {
-    font-family: Georgia, serif;
     font-size: 64px;
-    letter-spacing: 8px;
+    line-height: 1.05;
     color: #d4af37;
 }
 
 h2 {
-    font-family: Georgia, serif;
     font-size: 52px;
-    max-width: 700px;
+    line-height: 1.1;
+    max-width: 750px;
 }
 
 p {
@@ -39,7 +47,64 @@ p {
     max-width: 650px;
 }
 
-/* BUTTONS */
+.section-label {
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 10px 0 30px;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    color: #d4af37;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #f4efe6;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.nav-links a.active {
+    color: #d4af37;
+}
+
+
+/* =========================
+   BUTTONS + LINKS
+========================= */
 
 button,
 .book-button {
@@ -55,37 +120,98 @@ button,
     cursor: pointer;
 }
 
-/* MAIN SECTIONS */
+button:hover,
+.book-button:hover {
+    opacity: 0.9;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/* =========================
+   HOMEPAGE HERO
+========================= */
+
+header {
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.brand-subtitle {
+    color: #d4af37;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    max-width: 850px;
+}
+
+.hero-description {
+    color: #aaa;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   SHARED SECTIONS
+========================= */
 
 .services,
 .pricing,
 .service-area,
-.booking {
+.booking,
+.home-services,
+.home-booking {
     width: 100%;
-    margin: 0;
-    padding: 60px 0;
+    padding: 80px 0;
     border-top: 1px solid #333;
 }
 
-/* SECTION HEADINGS */
-
-.section-label {
-    color: #d4af37;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
+.services > h1,
+.pricing > h1,
+.booking > h1 {
+    max-width: 800px;
+    margin-bottom: 55px;
 }
 
-.services > h2,
-.pricing > h2,
 .service-area > h2,
-.booking > h2 {
-    margin-top: 0;
-    margin-bottom: 40px;
+.home-services > h2,
+.home-booking > h2 {
+    margin-bottom: 35px;
 }
 
-/* SERVICES */
+
+/* =========================
+   HOME SERVICES
+========================= */
+
+.home-services p:not(.section-label) {
+    color: #999;
+}
+
+.home-booking {
+    text-align: left;
+}
+
+
+/* =========================
+   SERVICES PAGE
+========================= */
 
 .service-grid {
     display: grid;
@@ -105,7 +231,6 @@ button,
 }
 
 .service h3 {
-    font-family: Georgia, serif;
     font-size: 25px;
     margin-top: 25px;
 }
@@ -115,7 +240,20 @@ button,
     margin-top: 15px;
 }
 
-/* PRICING */
+.page-cta {
+    margin-top: 90px;
+    padding-top: 60px;
+    border-top: 1px solid #333;
+}
+
+.page-cta h2 {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   PRICING
+========================= */
 
 .price-list {
     width: 100%;
@@ -130,8 +268,11 @@ button,
     border-top: 1px solid #333;
 }
 
+.price-item:last-child {
+    border-bottom: 1px solid #333;
+}
+
 .price-item h3 {
-    font-family: Georgia, serif;
     font-size: 22px;
 }
 
@@ -155,7 +296,45 @@ button,
     margin-top: 35px;
 }
 
-/* SERVICE AREA */
+
+/* =========================
+   WHY STONE & SEAL
+========================= */
+
+.why-stone-seal {
+    width: 100%;
+    padding: 80px 0;
+    border-top: 1px solid #333;
+}
+
+.why-stone-seal > h2 {
+    margin-bottom: 50px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 45px 60px;
+}
+
+.why-item {
+    border-top: 1px solid #555;
+    padding-top: 25px;
+}
+
+.why-item h3 {
+    font-size: 24px;
+}
+
+.why-item p {
+    color: #999;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   SERVICE AREA
+========================= */
 
 .area-intro {
     color: #999;
@@ -182,7 +361,10 @@ button,
     margin-top: 35px;
 }
 
-/* BOOKING */
+
+/* =========================
+   BOOKING
+========================= */
 
 .booking-intro {
     color: #999;
@@ -223,6 +405,7 @@ button,
     padding: 17px;
     font-size: 16px;
     outline: none;
+    border-radius: 0;
 }
 
 .form-group select {
@@ -245,7 +428,45 @@ button,
     margin-top: 20px;
 }
 
-/* FOOTER */
+
+/* =========================
+   APPOINTMENT READY
+========================= */
+
+.appointment-ready {
+    width: 100%;
+    padding: 80px 0;
+    border-top: 1px solid #333;
+}
+
+.appointment-ready > h2 {
+    margin-bottom: 50px;
+}
+
+.ready-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 45px 60px;
+}
+
+.ready-item {
+    border-top: 1px solid #555;
+    padding-top: 25px;
+}
+
+.ready-item h3 {
+    font-size: 24px;
+}
+
+.ready-item p {
+    color: #999;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
     padding: 60px 0 30px;
@@ -279,6 +500,15 @@ button,
     color: #d4af37;
 }
 
+.footer-contact a {
+    color: #f4efe6;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #d4af37;
+}
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -292,16 +522,45 @@ button,
     font-size: 11px;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 700px) {
+
     body {
-        padding: 30px 22px;
+        padding: 25px 22px 40px;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 21px;
+        letter-spacing: 4px;
+    }
+
+    header {
+        min-height: 520px;
+        padding: 60px 0;
     }
 
     h1 {
-        font-size: 38px;
-        letter-spacing: 4px;
+        font-size: 42px;
     }
 
     h2 {
@@ -315,13 +574,19 @@ button,
     .services,
     .pricing,
     .service-area,
-    .booking {
-        padding: 45px 0;
+    .booking,
+    .home-services,
+    .home-booking,
+    .why-stone-seal,
+    .appointment-ready {
+        padding: 55px 0;
     }
 
     .service-grid,
     .area-grid,
-    .form-row {
+    .form-row,
+    .why-grid,
+    .ready-grid {
         grid-template-columns: 1fr;
         gap: 0;
     }
@@ -330,7 +595,13 @@ button,
         gap: 45px;
     }
 
+    .why-grid,
+    .ready-grid {
+        gap: 45px;
+    }
+
     .price-item {
+        align-items: flex-start;
         gap: 20px;
     }
 
@@ -342,6 +613,11 @@ button,
     button {
         width: 100%;
         text-align: center;
+    }
+
+    .page-cta {
+        margin-top: 60px;
+        padding-top: 50px;
     }
 
     .footer {
